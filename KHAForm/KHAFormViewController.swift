@@ -32,8 +32,12 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
         reloadForm()
     }
     
-    public func reloadForm() {
+    public func reloadCellsData() {
         cells = formCellsInForm(self)
+    }
+    
+    public func reloadForm() {
+        reloadCellsData()
         tableView.reloadData()
     }
     
