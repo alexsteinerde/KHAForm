@@ -118,6 +118,8 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
         } else if cell is KHADatePickerFormCell {
             let dateCell = formCellForIndexPath(NSIndexPath(forRow: indexPath.row-1, inSection: indexPath.section))
             cell.datePicker.datePickerMode = dateCell.datePickerMode
+            cell.datePicker.minimumDate = dateCell.minimumDate
+            cell.datePicker.maximumDate = dateCell.maximumDate
             cell.datePicker.addTarget(self, action: #selector(self.didDatePickerValueChanged(_:)), forControlEvents: UIControlEvents.ValueChanged)
         }
         return cell
