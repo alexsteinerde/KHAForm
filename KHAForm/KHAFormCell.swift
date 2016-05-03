@@ -55,6 +55,7 @@ public class KHAFormCell: UITableViewCell {
     public let button: UIButton = UIButton()
     public var date: NSDate = NSDate()
     public var dateDelegate:KHADateFormCellDelegate?
+    public var dateChangedAction:((date:NSDate)->Void)?
     public var dateFormatter = NSDateFormatter()
     public var datePickerMode = UIDatePickerMode.DateAndTime
     public let datePicker: UIDatePicker = UIDatePicker()

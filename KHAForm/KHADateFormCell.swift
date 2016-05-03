@@ -20,6 +20,7 @@ class KHADateFormCell: KHAFormCell {
         }
         didSet {
             dateDelegate?.dateDidChange(date)
+            dateChangedAction?(date: date)
         }
     }
     
