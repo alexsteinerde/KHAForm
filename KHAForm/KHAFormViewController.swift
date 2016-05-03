@@ -126,7 +126,7 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
         
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! KHAFormCell
 
-        if cell is KHADateFormCell {
+        if cell is KHADateFormCell && cell.datePickerEnabled {
             displayInlineDatePickerForRowAtIndexPath(indexPath)
         } else if cell is KHASelectionFormCell {
             lastIndexPath = indexPath
