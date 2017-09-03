@@ -15,6 +15,7 @@
 		55EC5AF21AD11CEB00B0F964 /* KHAFormDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC5AF11AD11CEB00B0F964 /* KHAFormDemoTests.swift */; };
 		55F969931B1DA9ED00338F81 /* PhoneSelectionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F969921B1DA9ED00338F81 /* PhoneSelectionFormViewController.swift */; };
 		6B25513A743145D6A6751175 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33105A9FF00C537B57A47B3F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FAFD6FFE1F5C576400B72F22 /* KHAForm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FAFD6FFD1F5C576400B72F22 /* KHAForm.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		55F969921B1DA9ED00338F81 /* PhoneSelectionFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneSelectionFormViewController.swift; sourceTree = "<group>"; };
 		A9F8FE0834349053D0097BD5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F3A211C04486838412333AEF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FAFD6FFD1F5C576400B72F22 /* KHAForm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KHAForm.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		55EC5ACD1AD11CEB00B0F964 = {
 			isa = PBXGroup;
 			children = (
+				FAFD6FFD1F5C576400B72F22 /* KHAForm.podspec */,
 				55EC5AD81AD11CEB00B0F964 /* KHAFormDemo */,
 				55EC5AEE1AD11CEB00B0F964 /* KHAFormDemoTests */,
 				55EC5AD71AD11CEB00B0F964 /* Products */,
@@ -229,6 +232,7 @@
 				55EC5AE11AD11CEB00B0F964 /* Main.storyboard in Resources */,
 				55EC5AE61AD11CEB00B0F964 /* LaunchScreen.xib in Resources */,
 				55EC5AE31AD11CEB00B0F964 /* Images.xcassets in Resources */,
+				FAFD6FFE1F5C576400B72F22 /* KHAForm.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

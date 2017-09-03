@@ -39,6 +39,7 @@ class ExampleFormViewController: KHAFormViewController {
         let cell10 = dequeueReusableFormCellWithType(.button)
         let cell11 = KHAFormCell()   // we can use custom cell
         let cell12 = KHAFormCell()
+        let cell13 = KHAFormCell()
         
         // settings for each cell
         cell1.textField.text = "Title"
@@ -84,11 +85,14 @@ class ExampleFormViewController: KHAFormViewController {
         cell11.textLabel?.text = "custom cell"
         
         cell12.textLabel?.text = "Open"
-        cell12.customInlineCell = cell1
+        cell12.customInlineCell = cell2
+        
+        cell13.textLabel?.text = "Open 2"
+        cell13.customInlineCell = cell3
         
         // Form structure is determined by using two-dimensional array.
         // First index determines section and second index determines row.
-        return [[cell1, cell2, cell3], [cell4, cell5], [cell6, cell7], [cell8], [cell9, cell10], [cell11], [cell12]]
+        return [[cell1, cell2, cell3], [cell4, cell5], [cell6, cell7], [cell8], [cell9, cell10], [cell11], [cell12, cell13]]
     }
     
     func didPressedDeleteButton(_ sender: UIButton) {
