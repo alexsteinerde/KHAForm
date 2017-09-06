@@ -39,7 +39,7 @@ class ExampleFormViewController: KHAFormViewController {
         let cell10 = dequeueReusableFormCellWithType(.button)
         let cell11 = KHAFormCell()   // we can use custom cell
         let cell12 = KHAFormCell()
-        let cell13 = KHAFormCell()
+        let cell13 = dequeueReusableFormCellWithType(.picker)
         
         // settings for each cell
         cell1.textField.text = "Title"
@@ -87,7 +87,8 @@ class ExampleFormViewController: KHAFormViewController {
         cell12.textLabel?.text = "Open"
         cell12.customInlineCell = cell2
         
-        cell13.textLabel?.text = "Open 2"
+        cell13.pickerView.dataSource = self
+        cell13.pickerView.delegate = self
         cell13.customInlineCell = cell3
         
         // Form structure is determined by using two-dimensional array.
@@ -120,5 +121,20 @@ class ExampleFormViewController: KHAFormViewController {
         print("cancel")
     }
 
+}
+
+extension ExampleFormViewController : UIPickerViewDataSource, UIPickerViewDelegate {
+    @available(iOS 2.0, *)
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 100
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return String(row)
+    }
 }
 

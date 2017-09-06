@@ -18,6 +18,7 @@ public enum KHAFormCellType {
     case textView
     case button
     case selection
+    case picker
     
     func cellID() -> String {
         switch self {
@@ -29,6 +30,7 @@ public enum KHAFormCellType {
         case .textView:         return KHATextViewFormCell.cellID
         case .button:           return KHAButtonFormCell.cellID
         case .selection:        return KHASelectionFormCell.cellID
+        case .picker:           return KHAPickerFormCell.cellID
         }
     }
     
@@ -42,6 +44,7 @@ public enum KHAFormCellType {
         case .textView:         return KHATextViewFormCell.self
         case .button:           return KHAButtonFormCell.self
         case .selection:        return KHASelectionFormCell.self
+        case .picker:           return KHAPickerFormCell.self
         }
     }
 }
@@ -68,6 +71,7 @@ open class KHAFormCell: UITableViewCell {
     open let textView: UIPlaceholderTextView = UIPlaceholderTextView()
     open var selectionFormViewController = KHASelectionFormViewController()
     open var customInlineCell: KHAFormCell?
+    open var pickerView = UIPickerView()
     // MARK: How can I implement class cluster at init?
     // The comment outed code below doesn't work.
     
@@ -113,6 +117,8 @@ open class KHAFormCell: UITableViewCell {
             return KHAButtonFormCell()
         case .selection:
             return KHASelectionFormCell()
+        case .picker:
+            return KHAPickerFormCell()
         }
     }
 }
