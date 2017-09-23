@@ -96,12 +96,12 @@ class ExampleFormViewController: KHAFormViewController {
         return [[cell1, cell2, cell3], [cell4, cell5], [cell6, cell7], [cell8], [cell9, cell10], [cell11], [cell12, cell13]]
     }
     
-    func didPressedDeleteButton(_ sender: UIButton) {
+    @objc func didPressedDeleteButton(_ sender: UIButton) {
         print("delete")
         
         // We can access to the first cell contains text field...
         let cell1 = formCellForIndexPath(IndexPath(row: 0, section: 0))
-        print(cell1.textField.text)
+        print(cell1.textField.text ?? String())
         
         // ...and second cell contains segmented controller, etc...
         let cell2 = formCellForIndexPath(IndexPath(row: 1, section: 0))
@@ -117,7 +117,7 @@ class ExampleFormViewController: KHAFormViewController {
         print(cell6.selectionFormViewController.selections[cell6.selectionFormViewController.selectedIndex])
     }
     
-    func didPressedCancelButton(_ sender: UIButton) {
+    @objc func didPressedCancelButton(_ sender: UIButton) {
         print("cancel")
     }
 

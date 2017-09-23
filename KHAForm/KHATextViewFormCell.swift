@@ -101,7 +101,7 @@ open class UIPlaceholderTextView: UITextView {
         super.draw(rect)
     }
     
-    internal func textChanged(_ notification:Notification?) -> (Void) {
+    @objc internal func textChanged(_ notification:Notification?) -> (Void) {
         if(self.placeholder.length == 0){
             return
         }

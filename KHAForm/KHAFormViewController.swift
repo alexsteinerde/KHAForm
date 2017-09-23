@@ -305,7 +305,7 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
     /*! User chose to change the date by changing the values inside the UIDatePicker.
         @param sender The sender for this action: UIDatePicker.
     */
-    func didDatePickerValueChanged(_ sender: UIDatePicker) {
+    @objc func didDatePickerValueChanged(_ sender: UIDatePicker) {
         
         var targetedCellIndexPath: IndexPath?
         
