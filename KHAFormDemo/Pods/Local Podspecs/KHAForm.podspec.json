@@ -1,22 +1,22 @@
 {
   "name": "KHAForm",
-  "version": "0.1.8",
+  "version": "0.5",
   "summary": "Simple tableview form in swift",
-  "homepage": "https://github.com/KoheiHayakawa/KHAForm",
+  "homepage": "https://github.com/alexsteinerde/KHAForm",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Kohei Hayakawa": "kohei.hayakawa.5@gmail.com"
+    "Kohei Hayakawa": "kohei.hayakawa.5@gmail.com",
+    "Alex Steiner": "info@alexsteiner.de"
   },
-  "social_media_url": "http://twitter.com/kohei_hayakawa",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source": {
-    "git": "https://github.com/KoheiHayakawa/KHAForm.git",
-    "tag": "0.1.8"
+    "git": "https://github.com/alexsteinerde/KHAForm.git",
+    "tag": "0.5"
   },
   "source_files": "KHAForm"
 }
