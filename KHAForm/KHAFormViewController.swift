@@ -131,7 +131,7 @@ class KHAFormViewController: UITableViewController, UITextFieldDelegate, UITextV
             cell.datePicker.datePickerMode = dateCell.datePickerMode
             cell.datePicker.minimumDate = dateCell.minimumDate as Date?
             cell.datePicker.maximumDate = dateCell.maximumDate as Date?
-            cell.datePicker.addTarget(self, action: #selector(self.didDatePickerValueChanged(_:)), for: UIControlEvents.valueChanged)
+            cell.datePicker.addTarget(self, action: #selector(self.didDatePickerValueChanged(_:)), for: UIControl.Event.valueChanged)
         }
         return cell
     }

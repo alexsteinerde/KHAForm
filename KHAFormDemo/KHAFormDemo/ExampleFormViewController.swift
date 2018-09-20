@@ -44,7 +44,7 @@ class ExampleFormViewController: KHAFormViewController {
         // settings for each cell
         cell1.textField.text = "Title"
         cell1.textField.placeholder = "placeholder"
-        cell1.textField.clearButtonMode = UITextFieldViewMode.always
+        cell1.textField.clearButtonMode = UITextField.ViewMode.always
         
         cell2.segmentedControl.setTitle("First", forSegmentAt: 0)
         cell2.segmentedControl.setTitle("Second", forSegmentAt: 1)
@@ -74,13 +74,13 @@ class ExampleFormViewController: KHAFormViewController {
         
         cell8.textView.placeholder = "placeholder" // We can add placeholder on textview
         
-        cell9.button.setTitle("Delete", for: UIControlState())
-        cell9.button.setTitleColor(UIColor.red, for: UIControlState())
-        cell9.button.addTarget(self, action: #selector(ExampleFormViewController.didPressedDeleteButton(_:)), for: UIControlEvents.touchUpInside)
+        cell9.button.setTitle("Delete", for: UIControl.State())
+        cell9.button.setTitleColor(UIColor.red, for: UIControl.State())
+        cell9.button.addTarget(self, action: #selector(ExampleFormViewController.didPressedDeleteButton(_:)), for: UIControl.Event.touchUpInside)
         
-        cell10.button.setTitle("Cancel", for: UIControlState())
-        cell10.button.setTitleColor(UIColor.darkGray, for: UIControlState())
-        cell10.button.addTarget(self, action: #selector(ExampleFormViewController.didPressedCancelButton(_:)), for: UIControlEvents.touchUpInside)
+        cell10.button.setTitle("Cancel", for: UIControl.State())
+        cell10.button.setTitleColor(UIColor.darkGray, for: UIControl.State())
+        cell10.button.addTarget(self, action: #selector(ExampleFormViewController.didPressedCancelButton(_:)), for: UIControl.Event.touchUpInside)
         
         cell11.textLabel?.text = "custom cell"
         

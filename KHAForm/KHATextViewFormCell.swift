@@ -17,7 +17,7 @@ class KHATextViewFormCell: KHAFormCell {
     fileprivate let kCellHeight: CGFloat = 144
     fileprivate let kFontSize: CGFloat = 16
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
         frame = CGRect(
@@ -78,7 +78,7 @@ open class UIPlaceholderTextView: UITextView {
     
     override open func draw(_ rect: CGRect) {
 
-        NotificationCenter.default.addObserver(self, selector: #selector(self.textChanged(_:)), name: NSNotification.Name.UITextViewTextDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.textChanged(_:)), name: UITextView.textDidChangeNotification, object: nil)
         
         if(self.placeholder.length > 0) {
             self.placeholderLabel.frame           = CGRect(x: 4,y: 8,width: self.bounds.size.width - 16,height: 0)
@@ -93,9 +93,9 @@ open class UIPlaceholderTextView: UITextView {
             self.placeholderLabel.sizeToFit()
             self.addSubview(placeholderLabel)
         }
-        self.sendSubview(toBack: placeholderLabel)
+        self.sendSubviewToBack(placeholderLabel)
         
-        if(self.text.characters.count == 0 && self.placeholder.length > 0){
+        if(self.text.count == 0 && self.placeholder.length > 0){
             self.viewWithTag(999)?.alpha = 1
         }
         super.draw(rect)
@@ -105,7 +105,7 @@ open class UIPlaceholderTextView: UITextView {
         if(self.placeholder.length == 0){
             return
         }
-        if(self.text.characters.count == 0) {
+        if(self.text.count == 0) {
             self.viewWithTag(999)?.alpha = 1
         }else{
             self.viewWithTag(999)?.alpha = 0

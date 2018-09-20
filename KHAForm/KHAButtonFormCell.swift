@@ -16,11 +16,11 @@ class KHAButtonFormCell: KHAFormCell {
     
     fileprivate let kFontSize: CGFloat = 15
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
         
-        button.setTitle("Button", for: UIControlState())
+        button.setTitle("Button", for: UIControl.State())
         button.titleLabel?.font = UIFont.systemFont(ofSize: kFontSize)
         button.titleLabel?.textAlignment = .center
         button.translatesAutoresizingMaskIntoConstraints = false

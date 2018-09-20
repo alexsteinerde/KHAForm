@@ -55,7 +55,7 @@ public protocol KHADateFormCellDelegate {
 
 open class KHAFormCell: UITableViewCell {
 
-    open let button: UIButton = UIButton()
+    public let button: UIButton = UIButton()
     open var date: Date = Date()
     open var dateDelegate:KHADateFormCellDelegate?
     open var dateChangedAction:((_ date:Date)->Void)?
@@ -63,12 +63,12 @@ open class KHAFormCell: UITableViewCell {
     open var dateFormatter = DateFormatter()
     open var minimumDate: Date?
     open var maximumDate:Date?
-    open var datePickerMode = UIDatePickerMode.dateAndTime
-    open let datePicker: UIDatePicker = UIDatePicker()
+    open var datePickerMode = UIDatePicker.Mode.dateAndTime
+    public let datePicker: UIDatePicker = UIDatePicker()
     open var segmentedControl: UISegmentedControl = UISegmentedControl()
-    open let sswitch: UISwitch = UISwitch()
-    open let textField: UITextField = UITextField()
-    open let textView: UIPlaceholderTextView = UIPlaceholderTextView()
+    public let sswitch: UISwitch = UISwitch()
+    public let textField: UITextField = UITextField()
+    public let textView: UIPlaceholderTextView = UIPlaceholderTextView()
     open var selectionFormViewController = KHASelectionFormViewController()
     open var customInlineCell: KHAFormCell?
     open var pickerView = UIPickerView()
