@@ -14,8 +14,8 @@
 		55EC5AE61AD11CEB00B0F964 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55EC5AE41AD11CEB00B0F964 /* LaunchScreen.xib */; };
 		55EC5AF21AD11CEB00B0F964 /* KHAFormDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC5AF11AD11CEB00B0F964 /* KHAFormDemoTests.swift */; };
 		55F969931B1DA9ED00338F81 /* PhoneSelectionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F969921B1DA9ED00338F81 /* PhoneSelectionFormViewController.swift */; };
-		8A3566760AD0F3CC8EE94A1B /* Pods_KHAFormDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9410C63F6EDEDB399CB32CE /* Pods_KHAFormDemo.framework */; };
-		FAFD6FFE1F5C576400B72F22 /* KHAForm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FAFD6FFD1F5C576400B72F22 /* KHAForm.podspec */; };
+		FA95FB3F21878D2B00DC98AF /* Pods_KHAFormDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA95FB3E21878D2B00DC98AF /* Pods_KHAFormDemo.framework */; };
+		FA95FB4121878DCD00DC98AF /* KHAForm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FA95FB4021878DCD00DC98AF /* KHAForm.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,8 @@
 		A9410C63F6EDEDB399CB32CE /* Pods_KHAFormDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KHAFormDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8192242284CD1DCA64D0CD0 /* Pods-KHAFormDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHAFormDemo.debug.xcconfig"; path = "Target Support Files/Pods-KHAFormDemo/Pods-KHAFormDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D5AC90276C8FBE2C62B60DCF /* Pods-KHAFormDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHAFormDemo.release.xcconfig"; path = "Target Support Files/Pods-KHAFormDemo/Pods-KHAFormDemo.release.xcconfig"; sourceTree = "<group>"; };
-		FAFD6FFD1F5C576400B72F22 /* KHAForm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KHAForm.podspec; sourceTree = "<group>"; };
+		FA95FB3E21878D2B00DC98AF /* Pods_KHAFormDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_KHAFormDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA95FB4021878DCD00DC98AF /* KHAForm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = KHAForm.podspec; path = ../KHAForm.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A3566760AD0F3CC8EE94A1B /* Pods_KHAFormDemo.framework in Frameworks */,
+				FA95FB3F21878D2B00DC98AF /* Pods_KHAFormDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +79,7 @@
 		55EC5ACD1AD11CEB00B0F964 = {
 			isa = PBXGroup;
 			children = (
-				FAFD6FFD1F5C576400B72F22 /* KHAForm.podspec */,
+				FA95FB4021878DCD00DC98AF /* KHAForm.podspec */,
 				55EC5AD81AD11CEB00B0F964 /* KHAFormDemo */,
 				55EC5AEE1AD11CEB00B0F964 /* KHAFormDemoTests */,
 				55EC5AD71AD11CEB00B0F964 /* Products */,
@@ -138,6 +139,7 @@
 		697995F5EFC79EE193DE4AA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA95FB3E21878D2B00DC98AF /* Pods_KHAFormDemo.framework */,
 				33105A9FF00C537B57A47B3F /* Pods.framework */,
 				A9410C63F6EDEDB399CB32CE /* Pods_KHAFormDemo.framework */,
 			);
@@ -235,7 +237,7 @@
 				55EC5AE11AD11CEB00B0F964 /* Main.storyboard in Resources */,
 				55EC5AE61AD11CEB00B0F964 /* LaunchScreen.xib in Resources */,
 				55EC5AE31AD11CEB00B0F964 /* Images.xcassets in Resources */,
-				FAFD6FFE1F5C576400B72F22 /* KHAForm.podspec in Resources */,
+				FA95FB4121878DCD00DC98AF /* KHAForm.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
