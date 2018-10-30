@@ -34,7 +34,7 @@ public enum KHAFormCellType {
         }
     }
     
-    func cellClass() -> AnyClass {
+    public func cellClass() -> AnyClass {
         switch self {
         case .textField:        return KHATextFieldFormCell.self
         case .segmentedControl: return KHASegmentedControlFormCell.self
